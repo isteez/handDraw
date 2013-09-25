@@ -1,4 +1,7 @@
 handDraw
 ========
 
-a simple iOS drawing application, using bezier curves
+A simple iOS drawing application, using bezier curves.
+
+Later versions to include:
+ - shape recognition 
