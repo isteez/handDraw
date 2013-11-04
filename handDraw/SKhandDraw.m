@@ -62,7 +62,14 @@
         // add a cubic Bezier from pt[0] to pt[3], with control points pt[1] and pt[2]
         [path addCurveToPoint:pts[3] controlPoint1:pts[1] controlPoint2:pts[2]];
         [self setNeedsDisplay];
-                
+        
+        // debug
+        NSLog(@"point 0 is %@", NSStringFromCGPoint(pts[0]));
+        //NSLog(@"point 1 is %@", NSStringFromCGPoint(pts[1]));
+        //NSLog(@"point 2 is %@", NSStringFromCGPoint(pts[2]));
+        NSLog(@"point 3 is %@", NSStringFromCGPoint(pts[3]));
+        NSLog(@"point 4 is %@", NSStringFromCGPoint(pts[4]));
+        
         // replace points and get ready to handle the next segment
         pts[0] = pts[3];
         pts[1] = pts[4];
